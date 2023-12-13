@@ -1,0 +1,50 @@
+{
+  "name": "react-generic-functions",
+  "version": "1.0.0",
+  "author": "fipnooone",
+  "repository": {
+    "type": "git",
+    "url": "github:fipnooone/react-generic-functions"
+  },
+  "main": "./dist/cjs/bundle.min.js",
+  "module": "./dist/esm/bundle.min.js",
+  "types": "./dist/cjs/bundle.min.d.ts",
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "bun-types": "latest",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3.1.1",
+    "react": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16",
+    "react": ">=16"
+  },
+  "bugs": {
+    "url": "https://github.com/fipnooone/react-generic-functions/issues"
+  },
+  "description": "React generic memo & forwardRef",
+  "homepage": "https://github.com/fipnooone/react-generic-functions",
+  "keywords": [
+    "react",
+    "generic",
+    "memo",
+    "forwardRef"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write .",
+    "lint": "eslint \"src/**/*.{ts,tsx,js}\"",
+    "type-check": "tsc --noEmit"
+  }
+}
