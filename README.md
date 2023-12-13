@@ -16,7 +16,7 @@ const ExampleComponent = forwardRef(
         ref: ForwardedRef<HtmlDivElement>
     ) => {
         const message = useMemo(() => {
-            if (typeof genericProp) {
+            if (typeof genericProp === 'number') {
                 return 'hello';
             } else {
                 return 'word';
