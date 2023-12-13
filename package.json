@@ -6,9 +6,9 @@
     "type": "git",
     "url": "github:fipnooone/react-generic-functions"
   },
-  "main": "./dist/cjs/bundle.min.js",
-  "module": "./dist/esm/bundle.min.js",
-  "types": "./dist/cjs/bundle.min.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "devDependencies": {
     "@types/react": "^18.2.45",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
