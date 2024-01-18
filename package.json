@@ -10,12 +10,9 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
-    ".": {
       "types": "./build/types/index.d.ts",
       "require": "./build/cjs/index.js",
-      "import": "./build/esm/index.js",
-      "default": "./build/esm/index.js"
-    }
+      "import": "./build/esm/index.js"
   },
   "devDependencies": {
     "@types/react": "^18.2.45",
