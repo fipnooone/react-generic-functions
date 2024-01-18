@@ -1,6 +1,6 @@
 {
   "name": "react-generic-functions",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "fipnooone",
   "repository": {
     "type": "git",
@@ -10,13 +10,13 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/cjs/index.d.ts",
   "exports": {
-		".": {
+    ".": {
       "types": "./build/types/index.d.ts",
       "require": "./build/cjs/index.js",
       "import": "./build/esm/index.js",
       "default": "./build/esm/index.js"
     }
-	},
+  },
   "devDependencies": {
     "@types/react": "^18.2.45",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
