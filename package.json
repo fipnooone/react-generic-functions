@@ -6,9 +6,17 @@
     "type": "git",
     "url": "github:fipnooone/react-generic-functions"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+		".": {
+      "types": "./build/types/index.d.ts",
+      "require": "./build/cjs/index.js",
+      "import": "./build/esm/index.js",
+      "default": "./build/esm/index.js"
+    }
+	},
   "devDependencies": {
     "@types/react": "^18.2.45",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
@@ -42,7 +50,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build:clean": "rimraf dist",
+    "build:compile": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json",
+    "build": "bun run build:clean && bun run build:compile",
     "format": "prettier --write .",
     "lint": "eslint \"src/**/*.{ts,tsx,js}\"",
     "type-check": "tsc --noEmit"
